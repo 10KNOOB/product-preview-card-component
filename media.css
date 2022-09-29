@@ -1,0 +1,22 @@
+@media only screen and (max-width: 628px) {
+  .grid {
+    grid-template-columns: 1fr;
+  }
+
+  .image img {
+    max-height: 400px;
+    width: 100%;
+    object-fit: cover;
+  }
+  .content {
+    display: block;
+  }
+
+  h6.product-catagory,
+  h2.product-name,
+  p.product-discription,
+  .price,
+  .cta {
+    padding-bottom: 1em;
+  }
+}

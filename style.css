@@ -1,0 +1,111 @@
+@import url("https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Montserrat:wght@500;700&display=swap");
+
+/*
+font-family: 'Fraunces', serif;
+font-family: 'Montserrat', sans-serif;
+*/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  background-color: hsl(30, 38%, 92%);
+  font-size: 14px; /*Default font size */
+}
+
+.container {
+  margin: 30px auto;
+  padding: 0 30px;
+  min-height: 100vh;
+
+  /*Center the card */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.grid {
+  max-width: 600px;
+  /*Creating grid */
+  display: grid;
+  /*Creating 2 columns */
+  grid-template-columns: 1fr 1fr;
+  background-color: #fff;
+  border-radius: 15px;
+  overflow: hidden; /*the image overflowing part will be removed*/
+}
+
+.image img {
+  /* so that our image and text can take same space*/
+  max-width: 100%;
+  display: inherit; /* so that our image match the card property*/
+}
+
+.content {
+  padding: 35px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+h6.product-catagory {
+  letter-spacing: 3px;
+  font-size: 13px;
+  color: hsl(228, 12%, 48%);
+  font-weight: 500;
+}
+
+h2.product-name {
+  font-family: "Fraunces", serif;
+  font-size: 34px;
+  line-height: 1em;
+  color: hsl(212, 21%, 14%);
+}
+
+p.product-discription {
+  line-height: 1.6em;
+  color: hsl(212, 21%, 14%);
+}
+
+.price {
+  display: flex;
+  align-items: center;
+}
+
+p.current-price {
+  font-family: "Fraunces", serif;
+  color: hsl(158, 36%, 37%);
+  font-size: 25px;
+  padding-right: 25px;
+}
+
+p.old-price {
+  font-family: "Fraunces", serif;
+  text-decoration: line-through;
+}
+
+button.cta {
+  background-color: hsl(158, 36%, 37%);
+  border: none;
+  padding: 14px 0;
+  border-radius: 6px;
+  color: white;
+  font-size: 15px;
+  font-weight: 700;
+  cursor: pointer;
+  width: 100%;
+  /* For smooth transition*/
+  transition: background-color 0.2s ease-in-out;
+}
+
+button.cta img {
+  padding-right: 7px;
+}
+
+button.cta:hover {
+  background-color: hsl(158, 36%, 23%);
+}
